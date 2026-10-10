@@ -220,7 +220,7 @@ async function connectionAttempt(execution: MatrixExecution, config: ConnectionC
       evidence.assisted = true;
       evidence.waits.push({ kind: "board_login", startedAt: new Date().toISOString() });
       await checkpoint("awaiting_board_login");
-      console.log(`[provider-connections] Sign in to Paperclip at ${origin} in the QA browser; this test resumes automatically.`);
+      console.log(`[provider-connections] Sign in to GIMMS at ${origin} in the QA browser; this test resumes automatically.`);
       const deadline = Date.now() + config.browser.loginTimeoutMs;
       let ready = false;
       while (Date.now() < deadline) { assertActive(); try { await api.get("/api/companies"); ready = true; break; } catch { await connectionDelay(1000); } }

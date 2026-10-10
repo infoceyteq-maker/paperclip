@@ -1,17 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="-1.00 -1.00 26.00 26.00"
-     style="transform:rotate(0deg);transform-origin:50% 50%;">
-  <defs></defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="16" height="16">
+  <title>GIMMS thinking</title>
   <style>
-    @keyframes draw {
-  0%          { stroke-dasharray:0.000 85.717; stroke-dashoffset:-85.717; opacity:1; animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-  39.0625%      { stroke-dasharray:85.717 85.717; stroke-dashoffset:0.000; opacity:1; animation-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-  78.1250%      { stroke-dasharray:0.000 85.717; stroke-dashoffset:0.000; opacity:1; }
-  78.2250%  { opacity:0; }
-  100%        { stroke-dasharray:0.000 85.717; stroke-dashoffset:0.000; opacity:0; }
-}
-    .p { animation: draw 1s linear infinite; }
+    .clip-path {
+      fill: none;
+      stroke: #ffffff;
+      stroke-width: 48;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      animation: paperclip-thinking 2.6s infinite;
+    }
+    @keyframes paperclip-thinking {
+      0%          { stroke-dasharray:0 2245.290; stroke-dashoffset:-2245.290; opacity:1; animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+      39.0625%    { stroke-dasharray:2245.290 2245.290; stroke-dashoffset:0; opacity:1; animation-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+      78.125%     { stroke-dasharray:0 2245.290; stroke-dashoffset:0; opacity:1; }
+      100%        { stroke-dasharray:0 2245.290; stroke-dashoffset:0; opacity:0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .clip-path { animation: none; stroke-dasharray: none; }
+    }
   </style>
-  <path class="p" d="M16 6 l-8.414 8.586 a2.000 2.000 0 0 0 2.828 2.828 l8.414 -8.586 a4.000 4.000 0 1 0 -5.657 -5.657 l-8.379 8.551 a6.000 6.000 0 1 0 8.485 8.485 l8.379 -8.551" fill="none" stroke="#ffffff"
-        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path class="clip-path" d="M150 4 C220 4 270 30 310 70 C330 90 335 100 352 105 C388 116 435 62 468 55 C496 49 528 88 556 96 C584 104 628 52 662 45 C700 38 750 88 795 128 C843 148 882 190 905 250 C922 294 898 336 852 345 C818 351 786 344 758 336 C704 320 660 306 618 309 C580 312 554 320 518 318 C480 316 450 302 410 305 C364 308 330 317 298 324 C266 331 230 341 190 343 C140 346 94 340 60 316 C26 292 4 247 3 202 C2 130 56 6 150 4 Z"/>
 </svg>

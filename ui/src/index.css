@@ -1491,19 +1491,19 @@ select:where(:not([multiple]):not(.appearance-none)):where(:not([size]), [size="
 
 @keyframes paperclip-thinking-draw {
   0% {
-    stroke-dasharray: 0 85.717;
-    stroke-dashoffset: -85.717;
+    stroke-dasharray: 0 2245.290;
+    stroke-dashoffset: -2245.290;
     opacity: 1;
     animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
   }
   39.0625% {
-    stroke-dasharray: 85.717 85.717;
+    stroke-dasharray: 2245.290 2245.290;
     stroke-dashoffset: 0;
     opacity: 1;
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
   78.125% {
-    stroke-dasharray: 0 85.717;
+    stroke-dasharray: 0 2245.290;
     stroke-dashoffset: 0;
     opacity: 1;
   }
@@ -1511,7 +1511,7 @@ select:where(:not([multiple]):not(.appearance-none)):where(:not([size]), [size="
     opacity: 0;
   }
   100% {
-    stroke-dasharray: 0 85.717;
+    stroke-dasharray: 0 2245.290;
     stroke-dashoffset: 0;
     opacity: 0;
   }
@@ -1577,7 +1577,7 @@ select:where(:not([multiple]):not(.appearance-none)):where(:not([size]), [size="
   .paperclip-thinking-icon-path {
     animation: none;
     opacity: 1;
-    stroke-dasharray: 85.717 85.717;
+    stroke-dasharray: 2245.290 2245.290;
     stroke-dashoffset: 0;
   }
 }

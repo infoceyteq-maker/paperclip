@@ -9,10 +9,10 @@ import { tenantSignInReturnPath } from "@/lib/cloudLinks";
 import { queryKeys } from "../lib/queryKeys";
 import { getRememberedInvitePath } from "../lib/invite-memory";
 import { Button } from "@/components/ui/button";
-import { AsciiArtAnimation } from "@/components/AsciiArtAnimation";
 import { PaperclipLoading } from "@/components/AnimatedPaperclipIcon";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { PaperclipLockup } from "../components/PaperclipLockup";
+import { GimmsLockup } from "@/components/GimmsLockup";
+import { GimmsBrandPanel } from "@/components/GimmsBrandPanel";
 
 type AuthMode = "sign_in" | "sign_up";
 
@@ -108,11 +108,11 @@ export function AuthPage() {
       <div className="w-full md:w-1/2 flex flex-col overflow-y-auto">
         <div className="w-full max-w-md mx-auto my-auto px-8 py-12">
           <div className="mb-8">
-            <PaperclipLockup className="h-5 w-auto" />
+            <GimmsLockup className="h-14 w-auto" />
           </div>
 
           <h1 className="text-xl font-semibold">
-            {mode === "sign_in" ? "Sign in to Paperclip" : "Create your Paperclip account"}
+            {mode === "sign_in" ? "Sign in to GIMMS" : "Create your GIMMS account"}
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">
             {mode === "sign_in"
@@ -220,9 +220,9 @@ export function AuthPage() {
         </div>
       </div>
 
-      {/* Right half — ASCII art animation (hidden on mobile) */}
+      {/* Right half — GIMMS brand badge (hidden on mobile) */}
       <div className="hidden md:block w-1/2 overflow-hidden">
-        <AsciiArtAnimation />
+        <GimmsBrandPanel />
       </div>
     </div>
   );

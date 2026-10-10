@@ -117,7 +117,7 @@ To use an existing local server or staging, replace `target` with:
 For local attach use `http://127.0.0.1:PORT` and `local_trusted`. Health must
 match the expected revision and deployment mode before credentials are read.
 The target is never reset, restarted, or given instance-setting changes.
-Sign in to Paperclip in the QA browser if needed; that session supplies the
+Sign in to GIMMS in the QA browser if needed; that session supplies the
 same public API permissions as the browser. The operator needs company/agent
 creation, connection management, and company archival permissions.
 

@@ -1,9 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>worktree</title>
   <style>
-    path { stroke: #db2777; }
-    @media (prefers-color-scheme: dark) {
-      path { stroke: #f472b6; }
-    }
+    .mark { fill: #db2777; }
+    @media (prefers-color-scheme: dark) { .mark { fill: #f472b6; } }
   </style>
-  <path stroke-width="2" d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"/>
+  <g transform="translate(26 169.1) scale(0.51111)" class="mark"><path d="M150 4 C220 4 270 30 310 70 C330 90 335 100 352 105 C388 116 435 62 468 55 C496 49 528 88 556 96 C584 104 628 52 662 45 C700 38 750 88 795 128 C843 148 882 190 905 250 C922 294 898 336 852 345 C818 351 786 344 758 336 C704 320 660 306 618 309 C580 312 554 320 518 318 C480 316 450 302 410 305 C364 308 330 317 298 324 C266 331 230 341 190 343 C140 346 94 340 60 316 C26 292 4 247 3 202 C2 130 56 6 150 4 Z M214 164 Q151.42 151.46 87.60 152.86 A40 40 0 0 0 102.94 225.37 Q161.86 200.81 214 164 Z M255 171 A9 9 0 1 0 237 171 A9 9 0 1 0 255 171 Z M255 167 L844 167 L844 239 L836 239 L836 175 L255 175 Z M881 275 A36 36 0 1 0 809 275 A36 36 0 1 0 881 275 Z" fill-rule="evenodd"/></g>
 </svg>

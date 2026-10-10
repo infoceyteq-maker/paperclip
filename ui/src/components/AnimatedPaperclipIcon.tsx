@@ -1,20 +1,21 @@
 import type { SVGProps } from "react";
 import { cn } from "../lib/utils";
+import { GIMMS_WAVE_OUTER_PATH } from "./gimms-paths";
 
 export function AnimatedPaperclipIcon({ className, ...props }: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      viewBox="-1 -1 26 26"
+      viewBox="0 0 900 340"
       className={cn("paperclip-thinking-icon", className)}
       aria-hidden="true"
       {...props}
     >
       <path
         className="paperclip-thinking-icon-path"
-        d="M16 6 l-8.414 8.586 a2.000 2.000 0 0 0 2.828 2.828 l8.414 -8.586 a4.000 4.000 0 1 0 -5.657 -5.657 l-8.379 8.551 a6.000 6.000 0 1 0 8.485 8.485 l8.379 -8.551"
+        d={GIMMS_WAVE_OUTER_PATH}
         fill="none"
         stroke="currentColor"
-        strokeWidth="2"
+        strokeWidth="48"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -22,7 +23,7 @@ export function AnimatedPaperclipIcon({ className, ...props }: SVGProps<SVGSVGEl
   );
 }
 
-/** Full-page loading state: a large, centered, gray animated paperclip. */
+/** Full-page loading state: a large, centered, gray animated GIMMS wave. */
 export function PaperclipLoading({ className }: { className?: string }) {
   return (
     <div
